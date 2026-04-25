@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+    <title>My first HTML</title>
+</head>
+<style>
+    body {background-image:url('26268.JPG') ;
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;}
+    h1 {color: black;}
+    p {color: cyan;}
+    p,h1,label {color: white;
+    text-shadow: 0 0 5px #00f7ff,0 0 10px #00f7ff,0 0 20px #00f7ff;}
+</style>
+<body>
+  <style>
+    body {
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
+  </style>
+</head>
+<body>
+
+<form onsubmit="changeBg(); return false;">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <option value="Bugatti">Bugatti</option>
+    <option value="ferrari">ferrari</option>
+    <option value="Lambo">Lambo</option>
+    <option value="audi">Audi</option>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+
+<script>
+function changeBg() {
+  let car = document.getElementById("cars").value;
+
+  if (car === "Bugatti") {
+    document.body.style.backgroundImage = "url('bugatti.jpg')";
+  } else if (car === "ferrari") {
+    document.body.style.backgroundImage = "url('ferrari.jpg')";
+  } else if (car === "lambo") {
+    document.body.style.backgroundImage = "url('lambo.jpg')";
+  } else if (car === "audi") {
+    document.body.style.backgroundImage = "url('audi.jpg')";
+  }
+}
+</script>
+
+</body>
+</html>
+<h1>You can change the cars</h1>
+    <p>Just click the button</p>
+</body>
+</html>
